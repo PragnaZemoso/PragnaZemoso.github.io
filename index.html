@@ -1,8 +1,64 @@
 <html>
     <head>
-
+        <title>Pragna Home Page</title>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <script src="./displayTabs.js" type="text/javascript"></script>
     </head>
     <body>
-        <h1>HELLO WORLD!!</h1>
+        <div class="welcome">
+            <img src="./Pragna.jpeg" alt="PragnaLogo">
+            <h1><strong>Welcome </strong> to My <i>Home Page</i>!</h1>
+        </div>
+    
+        <nav>
+            <button class="btnTab" id="defaultOpen" onClick="displayPage('home',this)">Home</button>
+            <button class="btnTab" onClick="displayPage('aboutMe',this)">About Me</button>
+            <button class="btnTab" onClick="displayPage('contactMe',this)">Contact Me</button>
+            <button class="btnTab" onClick="displayPage('myGallery',this)">My Gallery</button>
+        </nav>
+        <br><br>
+        <div id="home" class="content">
+            <p>This is my <strong>Home Page</strong></p>
+            <ul class="indentation">
+                <li>To know about me, click on <i>About Me</i> tab</li>
+                <li>To contact me, click on <i>Contact Me</i> tab</li>
+                <li>To view my photos, click on <i>My Gallery</i></li>
+            </ul>
+        </div>
+
+        <div id="aboutMe" class="content">
+            <p><strong>My Introduction</strong></p> 
+            <p class="indentation">I am <strong>Pragna Miryala</strong>. I am currently working at <strong>ZeMoSo Technologies</strong> as <strong>Associate Software Engineer</strong></p>
+            <p><strong>Education Details</strong></p> 
+            <ul class="indentation">
+                <li>I have completed my Bachelors degree B.Tech in CSE from <i>SNIST</i>. Passout year: <i>2019</i></li>
+                <li>+1 & +2 from Jawahar Navodaya Vidyalaya, Rangareddy. Passout year: <i>2015</i></li>
+                <li>Matriculation from Jawahar Navodaya Vidyalaya, Nalgonda. Passout year: <i>2013</i></li>
+            </ul>
+            <p><strong>Work Experience</strong></p> 
+            <ul class="indentation">
+                <li>I have previously worked at <i>INFOR India Pvt. Ltd.</i> as <i>Consultant,Associate</i></li>
+            </ul>
+        </div>
+
+        <div id="contactMe" class="content">
+            <p>Feel free to contact me anytime....</p> 
+            <div class="indentation">
+                <p>I am <strong>Pragna Miryala</strong> </p>
+                <p>Always available @ <strong>94**87**75</strong></p>
+                <p>Email me @ <strong>pragna.miryala@zemosolabs.com</strong></p>
+            </div>
+           
+
+        </div>
+        <div id="myGallery" class="content">
+            <img src="./Pragna.jpeg">
+            <img src="./Pragna_selfie.jpg">
+            <img src="./Pragna.jpeg">
+            <img src="./Pragna_selfie.jpg">
+            <img src="./sunset.jpg">
+
+        </div>
+        <script>document.getElementById("defaultOpen").click();</script>
     </body>
 </html>
